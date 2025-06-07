@@ -1,8 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from "path"
-import tailwindcss from "@tailwindcss/vite"
-// https://vite.dev/config/
+import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   resolve: {
     alias: {
@@ -10,9 +9,9 @@ export default defineConfig({
     },
   },
   base: './',
-  plugins: [react(), tailwindcss()],
+  plugins: [react(),tailwindcss()],
   build: {
-    outDir: '../html/dist', // <- This is where FiveM expects the UI
+    outDir: '../html', // <- This is where FiveM expects the UI
     emptyOutDir: true,
   },
 })
