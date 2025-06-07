@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from "path"
-import tailwindcss from '@tailwindcss/vite'
+// import tailwindcss from '@tailwindcss'
 export default defineConfig({
   resolve: {
     alias: {
@@ -9,7 +9,7 @@ export default defineConfig({
     },
   },
   base: './',
-  plugins: [react(),tailwindcss()],
+  plugins: [react()],
   build: {
     outDir: '../html', // <- This is where FiveM expects the UI
     emptyOutDir: true,
